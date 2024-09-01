@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add Products</title>
+    <link rel="stylesheet" href="padd.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <img src="home.jfif" alt="" />
+    </div>
+    <div class="imgcontainer">
+      <p
+        style="
+          font-family: 'Ubuntu-Bold', sans-serif;
+          color: white;
+          font-size: 30px;
+        "
+      >
+        Add Products
+      </p>
+    </div>
+    <div class="imgcontainer1">
+      <p
+        style="
+          font-family: 'Ubuntu-Bold', sans-serif;
+          color: white;
+          font-size: 20px;
+        "
+      >
+        ***Please Enter all the product details here***
+      </p>
+    </div>
+    <form action="productadd.php"  method="post" enctype="multipart/form-data">
+      <div class="divcontainer">
+        <div class="container">
+          <input
+            type="text"
+            placeholder="Enter Product Name"
+            name="pname"
+            required
+          />
+        </div>
+        <div class="container">
+          <textarea
+            name="pdescript"
+            id=""
+            cols="50"
+            rows="5"
+            placeholder="Enter Product Description"
+          ></textarea>
+        </div>
+        <div class="container">
+          <label style="color: white; font-size: large; padding-right: 10px"
+            >Choose Category</label
+          >
+          <select name="pcat" id="select1">
+            <option value="Racquet">Racquets</option>
+            <option value="Shuttle">Shuttle</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Gripper">Grippers</option>
+          </select>
+        </div>
+        <div class="container">
+          <input
+            type="number"
+            placeholder="Enter the cost in INR"
+            name="pcost"
+            required
+          />
+        </div>
+         <div class="container">
+          <label
+            for="imgg"
+            style="color: white; font-size: large; padding-right: 10px"
+            >Select image:</label
+          >
+          <input class="form-control" type="file" id="img" name="imgg" accept="image/*" value="" />
+        </div> 
+          <button type="submit"><span></span>Add</button>
+          <a
+            href="admin.php"
+            style="color: white; font-family: 'Ubuntu-Bold', sans-serif"
+            >Back</a
+          >
+          <!--<% if(msg!=''){ %>
+          <script>
+            alert("Product added Successfully!!");
+          </script>
+          <% } %>-->
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+

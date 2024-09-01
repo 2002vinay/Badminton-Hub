@@ -1,0 +1,72 @@
+<style>
+  /* Navbar Styling */
+  .navbar-container {
+    background-color: #679ed8;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #mainMenu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  #mainMenu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  #mainMenu li a:hover {
+    color: #007bff;
+  }
+
+  .profile-button {
+    background-color: rgba(252, 215, 92, 0.979);
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile-button a {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .profile-button:hover {
+    background-color: #ffca4f;
+  }
+</style>
+
+<div class="navbar-container">
+  <header>
+    <p>The Badminton Hub</p>
+  </header>
+  <nav>
+    <ul id="mainMenu">
+      <li>
+        <a href="home.php">Home</a>
+      </li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="products.php">Products</a></li>
+      <li><a href="orders.php">Orders</a></li>
+      <li><a href="cart.php">Cart</a></li>
+      <li class="profile-button">
+        <a href="profile.php">Profile</a>
+      </li>
+    </ul>
+  </nav>
+</div>
